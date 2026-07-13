@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "seed": "tsx prisma/seed.ts",
+    "seedcp": "tsx prisma/seedPages.ts",
     "seedp": "tsx prisma/seedProdutos.ts",
     "seedb": "tsx prisma/seedBlog.ts"
   },
