@@ -115,7 +115,6 @@ export const siteConfig = {
   ],
 },
 
-  // 🎨 TEMA 100% BASEADO NA IMAGEM
 theme: {
   bgPrimary: "#F7F8F8",
   bgSecondary: "#EEF2F2",
