@@ -1,92 +1,271 @@
 // src/client/config/site.config.ts
-// ⚠️ PREENCHA ESSES DADOS PARA CADA CLIENTE
 
 export const siteConfig = {
   nome: "CM Teixeiras",
+  nomeLegal: "CM Teixeiras",
 
-  // Logo
+  descricao:
+    "Camisas personalizadas, camisetas lisas e uniformes para empresas, igrejas, eventos, revendedores e clientes de todo o Brasil.",
+
   logoHorizontal: "/logo-cmteixeiras-horizontal.png",
   logoVertical: "/logo-cmteixeiras-vertical.png",
-  logoAlt: "Logo CM Teixeiras",
+  logoAlt: "CM Teixeiras - Camisas personalizadas e uniformes",
 
-  // WhatsApp
-  whatsapp: "5521986369426",
-  whatsappDisplay: "(21) 98636-9426",
-  whatsappMensagem:
-    "Olá! Vim pelo site e gostaria de um orçamento para camisas personalizadas.",
+  contato: {
+    whatsapp: "5521986369426",
+    whatsappDisplay: "(21) 98636-9426",
+    whatsappMensagem:
+      "Olá! Vim pelo site e gostaria de solicitar um orçamento.",
+    email: "",
+  },
 
-  // Header
+  localizacao: {
+    cidade: "Rio de Janeiro",
+    estado: "RJ",
+    pais: "BR",
+    endereco: "",
+    cep: "",
+  },
+
+  atendimento: {
+    areaAtendida: "Brasil",
+    horario: "",
+  },
+
+  redesSociais: {
+    instagram: {
+      usuario: "@cmteixeirasofc",
+      url: "https://www.instagram.com/cmteixeirasofc",
+    },
+    facebook: {
+      usuario: "",
+      url: "",
+    },
+    tiktok: {
+      usuario: "",
+      url: "",
+    },
+    youtube: {
+      usuario: "",
+      url: "",
+    },
+  },
+
+  empresa: {
+    cnpj: "",
+    fundacao: "",
+    slogan: "Camisas personalizadas com qualidade e identidade",
+  },
+
   headerCta: "Fazer orçamento",
 
-  // Redes sociais
-  instagram: "@cmteixeirasofc",
-  facebook: "",
-  tiktok: "",
-
-  cidade: "Rio de Janeiro, RJ",
-
-  // Navegação desktop
   navLinks: [
-    { label: "Início", href: "/" },
-    { label: "Coleção", href: "/loja" },
-    { label: "Sobre", href: "/sobre" },
-    { label: "Blog", href: "/blog" },
-    { label: "Contato", href: "https://wa.me/5521986369426" },
+    {
+      label: "Início",
+      href: "/",
+    },
+    {
+      label: "Coleção",
+      href: "/loja",
+    },
+    {
+      label: "Personalizados",
+      href: "/personalizado",
+    },
+    {
+      label: "Sobre",
+      href: "/sobre",
+    },
+    {
+      label: "Blog",
+      href: "/blog",
+    },
+    {
+      label: "Contato",
+      href: "https://wa.me/5521986369426",
+    },
   ],
 
-  // Navegação mobile
   mobileNavLinks: [
-    { label: "Início", href: "/" },
-    { label: "Coleção", href: "/loja" },
-    { label: "Carrinho", href: "/loja/carrinho" },
-    { label: "Sobre", href: "/sobre" },
-    { label: "Contato", href: "https://wa.me/5521986369426" },
+    {
+      label: "Início",
+      href: "/",
+    },
+    {
+      label: "Coleção",
+      href: "/loja",
+    },
+    {
+      label: "Personalizados",
+      href: "/personalizado",
+    },
+    {
+      label: "Carrinho",
+      href: "/loja/carrinho",
+    },
+    {
+      label: "Sobre",
+      href: "/sobre",
+    },
+    {
+      label: "Blog",
+      href: "/blog",
+    },
+    {
+      label: "Contato",
+      href: "https://wa.me/5521986369426",
+    },
   ],
 
-  // Footer — benefícios
   benefits: [
     {
       title: "Personalização sob medida",
-      description: "Camisas criadas de acordo com a necessidade do seu projeto ou evento.",
+      description:
+        "Camisas desenvolvidas de acordo com a identidade, necessidade e objetivo de cada projeto.",
     },
     {
       title: "Atendimento para grupos",
-      description: "Produção para empresas, igrejas, ações promocionais e eventos especiais.",
+      description:
+        "Produção para empresas, igrejas, escolas, academias, eventos e ações promocionais.",
     },
     {
       title: "Qualidade e acabamento",
-      description: "Peças produzidas com cuidado, conforto e atenção aos detalhes.",
+      description:
+        "Peças produzidas com atenção ao conforto, durabilidade e qualidade do acabamento.",
     },
   ],
 
-  // Footer — links
   footerNavLinks: [
-    { label: "Início", href: "/" },
-    { label: "Coleção", href: "/loja" },
-    { label: "Sobre", href: "/sobre" },
-    { label: "Contato", href: "https://wa.me/5521986369426" },
+    {
+      label: "Início",
+      href: "/",
+    },
+    {
+      label: "Coleção",
+      href: "/loja",
+    },
+    {
+      label: "Personalizados",
+      href: "/personalizado",
+    },
+    {
+      label: "Sobre",
+      href: "/sobre",
+    },
+    {
+      label: "Blog",
+      href: "/blog",
+    },
+    {
+      label: "Contato",
+      href: "https://wa.me/5521986369426",
+    },
   ],
 
   footerDescription:
-    "Camisas personalizadas e lisas para empresas, igrejas e eventos, com produção cuidadosa e atendimento direto.",
-  copyrightTagline: "Camisas personalizadas com qualidade e identidade",
+    "Camisas personalizadas, camisetas lisas e uniformes para empresas, igrejas, eventos e revendedores, com atendimento para todo o Brasil.",
+
+  copyrightTagline:
+    "Camisas personalizadas com qualidade e identidade",
 
   seo: {
-    titulo: "CM Teixeiras – Camisas personalizadas, uniformes e peças para eventos",
-    descricao:
-      "Camisas personalizadas e lisas para empresas, igrejas e eventos. Solicite seu orçamento com a CM Teixeiras.",
     url: "https://www.lojateixeiras.com.br",
-    ogImage: "/og-image.png",
+
+    locale: "pt_BR",
+
+    language: "pt-BR",
+
+    title: {
+      default:
+        "CM Teixeiras | Camisas personalizadas, camisetas lisas e uniformes",
+
+      template: "%s | CM Teixeiras",
+
+      home:
+        "Camisas personalizadas, camisetas lisas e uniformes | CM Teixeiras",
+    },
+
+    description:
+      "Camisas personalizadas, camisetas lisas e uniformes para empresas, igrejas, eventos e revendedores. Solicite seu orçamento com a CM Teixeiras.",
+
+    homeDescription:
+      "Compre camisas personalizadas, camisetas lisas e uniformes para empresas, igrejas, eventos e revendedores. Produção com qualidade e atendimento para todo o Brasil.",
+
+    ogImage: {
+      url: "/og-image.png",
+      width: 1200,
+      height: 630,
+      alt: "CM Teixeiras - Camisas personalizadas, camisetas lisas e uniformes",
+    },
+
     keywords: [
       "camisas personalizadas",
+      "camisetas personalizadas",
       "camisas lisas",
+      "camisetas lisas",
       "uniformes para empresas",
-      "camisas para igreja",
-      "camisas para eventos",
-      "camisetas personalizadas rj",
       "uniformes personalizados",
+      "camisas para igreja",
+      "camisetas para igreja",
+      "camisas para eventos",
+      "camisetas personalizadas RJ",
+      "camisas no atacado",
+      "camisetas no atacado",
+      "fornecedor de camisetas",
+      "camisas para revenda",
     ],
+
+    authors: [
+      {
+        name: "CM Teixeiras",
+        url: "https://www.lojateixeiras.com.br",
+      },
+    ],
+
+    creator: "CM Teixeiras",
+
+    publisher: "CM Teixeiras",
+
+    category: "Vestuário e confecção",
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        maxImagePreview: "large",
+        maxSnippet: -1,
+        maxVideoPreview: -1,
+      },
+    },
+
+    verification: {
+      google: "",
+      bing: "",
+    },
   },
+
+   // ─── Instalação Off-Line do site no tablet ────────────────────────────────────────
+  pwa: {
+  enabled: true,
+
+  shortName: "Nome do Negócio",
+
+  orientation: "any" as const,
+
+  icon192: "/pwa/icon-192.png",
+  icon512: "/pwa/icon-512.png",
+  maskableIcon512: "/pwa/icon-maskable-512.png",
+  appleTouchIcon: "/pwa/apple-touch-icon.png",
+
+  offlineRoutes: [
+    "/",
+    "/sobre",
+    "/loja",
+    "/blog",
+  ],
+},
 
   theme: {
     bgPrimary: "#F7F8F8",
@@ -118,4 +297,6 @@ export const siteConfig = {
     adminText: "#1F2937",
     adminBorder: "#D1D5DB",
   },
-}
+} as const;
+
+export type SiteConfig = typeof siteConfig;
